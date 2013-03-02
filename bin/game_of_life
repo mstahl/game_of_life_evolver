@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+
+begin
+  window = Ncurses.initscr
+  Ncurses.cbreak
+  Ncurses.noecho
+  Ncurses.curs_set 0
+
+  Ncurses.keypad(window, true)
+
+  game = GameOfLife.new
+  until game.static?
+    window.clear
+    game.draw(window)
+  end
+ensure
+  Ncurses.echo
+  Ncurses.curs_set 1
+  Ncurses.nocbreak
+  Ncurses.nl
+  Ncurses.endwin
+end
+
+# vim:ft=ruby
