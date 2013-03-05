@@ -1,1 +1,1 @@
-rvm 1.9.3@game_of_life --install --create
+rvm 1.9.3@game_of_life_evolver --install --create

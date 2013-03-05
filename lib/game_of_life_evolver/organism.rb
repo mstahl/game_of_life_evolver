@@ -1,4 +1,4 @@
-module GameOfLife
+module GameOfLifeEvolver
   class Organism
     attr_reader :raw
     attr_reader :history

@@ -1,4 +1,4 @@
-module GameOfLife
+module GameOfLifeEvolver
   # Defaults
   VERSION = '0.1a'
   ## Chromosome parameters
@@ -14,4 +14,4 @@ module GameOfLife
   CROSSOVER_PERCENT = 10      # % of crossovers and corresponding births
 end
 
-Dir[File.join(File.dirname(__FILE__), 'game_of_life', '**', '*.rb')].each {|f| require f}
+Dir[File.join(File.dirname(__FILE__), 'game_of_life_evolver', '**', '*.rb')].each {|f| require f}

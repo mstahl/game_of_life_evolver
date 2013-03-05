@@ -14,8 +14,8 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "game_of_life"
-  gem.homepage = "http://github.com/mstahl/game_of_life"
+  gem.name = "game_of_life_evolver"
+  gem.homepage = "http://github.com/mstahl/game_of_life_evolver"
   gem.license = "MIT"
   gem.summary = %Q{Game of life simulation, with evolution}
   gem.description = %Q{Evolve gliders, guns, etc, for Conway's Game of Life}
@@ -43,7 +43,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "game_of_life #{version}"
+  rdoc.title = "game_of_life_evolver #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
